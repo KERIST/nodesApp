@@ -1,0 +1,36 @@
+.nodesApp {
+    &__editor {
+
+    }
+    &__btn {
+
+    }
+    &__container {
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        flex-flow: row wrap;
+    }
+    &__node {
+        width: 24%;
+        padding: 10px;
+        background: gray;
+        margin: 0 5px 5px 0;
+        position: relative;
+    }
+    &__del{
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        border: 1px solid rgb(255, 255, 255);
+        cursor: pointer;
+        color: #fff;
+        border-radius: 50%;
+        background: rgba(0, 0, 0, 0.5);
+        width: 25px;
+        height: 25px;
+        &:after{
+            content: 'x';
+        }
+    }
+}
